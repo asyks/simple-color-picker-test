@@ -91,16 +91,16 @@ const App: React.FC = () => {
       <header>
         Pick a Color
       </header>
-      <label>r:</label>
-      <input type="number" step="1" min="0" max="255" value={colorRed} onChange={
+      <label>R:</label>
+      <input type="number" min="0" max="255" value={colorRed} onChange={
         (e) => e.target.value && setColorRedCallback(parseInt(e.target.value))
       }/>
-      <label>g:</label>
-      <input type="number" step="1" min="0" max="255" value={colorGreen} onChange={
+      <label>G:</label>
+      <input type="number" min="0" max="255" value={colorGreen} onChange={
         (e) => e.target.value && setColorGreenCallback(parseInt(e.target.value))
       }/>
-      <label>b:</label>
-      <input type="number" step="1" min="0" max="255" value={colorBlue} onChange={
+      <label>B:</label>
+      <input type="number" min="0" max="255" value={colorBlue} onChange={
         (e) => e.target.value && setColorBlueCallback(parseInt(e.target.value))
       }/>
     </div>
