@@ -25,7 +25,7 @@ function hexNumberToRgb(color: number): RGBAColor {
 
 function rgbToHex(color: RGBAColor): string {
   const { r, g, b } = color
-  var hex = [
+  const hex = [
     '#',
     pad2(Math.abs(r).toString(16)),
     pad2(Math.abs(g).toString(16)),
