@@ -6,6 +6,7 @@
 
 # bundled js
 /dist/*.js
+/dist/*.js.map
 
 # misc
 .DS_Store
