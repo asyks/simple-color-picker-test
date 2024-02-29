@@ -67,21 +67,21 @@ const App: React.FC = () => {
     setColorRed(colorNum)
     const hex = rgbToHex({r: colorNum, g: colorGreen, b: colorBlue})
     colorPicker.setColor(hex)
-    document.body.style.background = colorHex
+    setColorHex(hex)
   }, [colorGreen, colorBlue])
 
   const setColorGreenCallback = useCallback((colorNum: number) => {
     setColorGreen(colorNum)
     const hex = rgbToHex({r: colorRed, g: colorNum, b: colorBlue})
     colorPicker.setColor(hex)
-    document.body.style.background = colorHex
+    setColorHex(hex)
   }, [colorRed, colorBlue])
 
   const setColorBlueCallback = useCallback((colorNum: number) => {
     setColorBlue(colorNum)
     const hex = rgbToHex({r: colorRed, g: colorGreen, b: colorNum})
     colorPicker.setColor(hex)
-    document.body.style.background = colorHex
+    setColorHex(hex)
   }, [colorRed, colorGreen])
 
   return (
