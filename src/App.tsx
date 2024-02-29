@@ -31,7 +31,6 @@ function rgbToHex(color: RGBAColor): string {
     pad2(Math.abs(g).toString(16)),
     pad2(Math.abs(b).toString(16))
   ]
-  console.log(hex)
 
   return hex.join('').toUpperCase()
 }
@@ -58,7 +57,6 @@ const App: React.FC = () => {
   useEffect(() => {
     document.body.style.background = colorHex
     const rgb = hexNumberToRgb(hexStringToNumber(colorHex))
-    console.log(rgb)
     setColorRed(rgb.r)
     setColorGreen(rgb.g)
     setColorBlue(rgb.b)
